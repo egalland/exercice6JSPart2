@@ -1,4 +1,10 @@
-// FONCTION CHANGEMENT D'IMAGE
-function swapImage(id, image){
-  document.getElementById(id).src = image;
+// FONCTION CHANGEMENT D'IMAGE LORSQU'ON RENTRE DANS LA ZONE DE L'IMAGE
+function swapImage(id){
+    // CHANGEMENT DE LA SOURCE DE L'IMAGE
+    document.getElementById(id).src = 'assets/images/' + id + '_2.jpg';
+}
+// FONCTION CHANGEMENT D'IMAGE LORSQU'ON SORT DE LA ZONE DE L'IMAGE
+function reverseImage(id){
+    // CHANGEMENT DE LA SOURCE DE L'IMAGE
+    document.getElementById(id).src = 'assets/images/' + id + '.jpg';
 }
